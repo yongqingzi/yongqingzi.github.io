@@ -14,7 +14,7 @@
 }
 
 .js .grid {
-	background: url(../img/loading.gif) no-repeat 50% 100px;
+	background: url(../image/loading.gif) no-repeat 50% 100px;
 }
 
 .js .grid.loaded {
