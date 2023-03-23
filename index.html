@@ -353,10 +353,9 @@
 						(function(sqlJson){
 							/*这里会根据后台返回的数据来判断是否你进行分页或者数据加载完毕这里假设大于30就不在加载数据*/
 							if(itemNum>=234){
-								loading.text('End');
+								loading.text('已经到底了');
 							}else{
 								var html="";
-//for(var j in sqlJson){
 								for(var i in sqlJson[j]){
 									html+="<li class='item'><a href='####' class='a-img'><img src='"+sqlJson[j][i].src+"'></a></li>";
 								}
@@ -373,8 +372,7 @@
 										clearTimeout(time);
 							        });
 								},800)
-//}
-j = j + 1;
+								j = j + 1;
 							}
 						})(sqlJson);
 					}
@@ -391,7 +389,6 @@ j = j + 1;
 				       	return img.src;
 				      };
 				 };
-				 loadImage('./images/one.jpeg',test());
 				/*item hover效果*/
 				var rbgB=['#71D3F5','#F0C179','#F28386','#8BD38B'];
 				$('#waterfull').on('mouseover','.item',function(){
@@ -458,7 +455,7 @@ j = j + 1;
 		</div>
 		<!-- loading按钮自己通过样式调整 -->
 		<div id="imloading" style="width:150px;height:30px;line-height:30px;font-size:16px;text-align:center;border-radius:3px;opacity:0.7;background:#000;margin:10px auto 30px;color:#fff;display:none">
-			I'm Loading.....
+			上拉加载更多...
 		</div>
 	</div>
 </body>
