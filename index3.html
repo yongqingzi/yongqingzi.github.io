@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>类似瀑布流效果边下拉页面边加载内容 | Demo 1</title>
+		<title>类似瀑布流效果边下拉页面边加载内容 | Demo 3</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -12,17 +12,15 @@
 	</head>
 	<body>
 		<div class="container">
-		
 			<header class="codrops-header">
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">向左滑动</a>
+					<a href="index.html">向左滑动</a>
 					<a href="index2.html">向下滑动</a>
-					<a href="index3.html">动画切换</a>
+					<a class="current-demo" href="index3.html">动画切换</a>
 				</nav>
 			</header>
-            
 			<section class="grid-wrap">
-				<ul class="grid swipe-right" id="grid">
+				<ul class="grid swipe-rotate" id="grid">
 					<li><a href="#"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
 					<li><a href="#"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
 					<li><a href="#"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
@@ -65,6 +63,7 @@
 					<li><a href="#"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
 				</ul>
 			</section>
+
 		</div><!-- /container -->
 		<script src="js/masonry.pkgd.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
